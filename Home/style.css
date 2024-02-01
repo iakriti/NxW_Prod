@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins,wght@1,500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+body{
+    background-color: rgba(11, 18, 30, 1);
+    font-family: 'Poppins', sans-serif;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.text{
+    /* width: 40vw; */
+    z-index: 1000;
+    height: 50%;
+    display: flex;
+}
+
+.icons{
+    width: 60vw;
+}
+.news,.weather{
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text{
+    padding-left: 100px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.heading{
+    font-size: 10rem;
+    /* border: 2px solid red; */
+    border-radius: 20px;
+    padding: 2px;
+    width: 380px;
+    color: hsl(230, 40%, 80%);
+      text-shadow:
+        0 0 1em hsla(320, 100%, 50%, 0.2),
+        0 0 0.125em hsla(320, 100%, 60%, 0.3),
+        1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+        -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+}
+.subheading{
+    font-size: 2rem;
+    padding: 2px;
+    /* border: 2px solid red; */
+    border-radius: 20px;
+    color: hsl(230, 40%, 80%);
+      text-shadow:
+        0 0 1em hsla(320, 100%, 50%, 0.2),
+        0 0 0.125em hsla(320, 100%, 60%, 0.3),
+        1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+        -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+}
+.cardweather,.cardnews{
+    background-color: rgba(32, 43, 60, 1);
+    height: 40vh;
+    width: 30vw;
+    border-radius: 15px;
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+}
+.cardweather{
+    background: url('./weather.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cardnews{
+    background: url('./news.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+canvas {
+    background: rgba(32, 43, 60, 1);
+    position: absolute;
+  }
+
+/* @media only screen and (max-width:620px){
+    .main{
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+    }
+    .news,.weather{
+        height: 30vh;
+        width: 50vw;
+        display: flex;
+    }
+    .heading{
+        font-size: 4rem;
+    }
+    .subheading{
+        font-size: 1.2rem;
+    }
+    .icons{
+        display: flex;
+        padding: 5px;
+        width: 80vw;
+        height: 60vw;
+    }
+    .cardweather,.cardnews{
+        background-color: rgba(32, 43, 60, 1);
+        width: 80vw;
+        border-radius: 15px;
+        border-radius: 16px;
+        backdrop-filter: blur(10px);
+    }
+} */
